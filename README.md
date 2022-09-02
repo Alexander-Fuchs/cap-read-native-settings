@@ -5,7 +5,7 @@ Read native settings from iOS and Android within your Ionic / Capacitor App.
 ## Install
 
 ```bash
-npm install cap-read-native-settings
+npm i https://github.com/Alexander-Fuchs/cap-read-native-settings
 npx cap sync
 ```
 
@@ -23,14 +23,14 @@ npx cap sync
 ### read(...)
 
 ```typescript
-read(options: { key: string; }) => Promise<{ key: string; }>
+read(key: string) => Promise<string>
 ```
 
-| Param         | Type                          |
-| ------------- | ----------------------------- |
-| **`options`** | <code>{ key: string; }</code> |
+| Param     | Type                |
+| --------- | ------------------- |
+| **`key`** | <code>string</code> |
 
-**Returns:** <code>Promise&lt;{ key: string; }&gt;</code>
+**Returns:** <code>Promise&lt;string&gt;</code>
 
 --------------------
 

@@ -6,8 +6,8 @@ export class CapReadNativeSettingsWeb
   extends WebPlugin
   implements CapReadNativeSettingsPlugin
 {
-  async read(options: { key: string }): Promise<{ key: string }> {
-    console.log('Read', options);
-    return options;
+  async read(key: string): Promise<string> {
+    console.log("Not implemented for Web")
+    return key;
   }
 }

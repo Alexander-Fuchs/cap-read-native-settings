@@ -7,15 +7,15 @@
     "methods": [
       {
         "name": "read",
-        "signature": "(options: { key: string; }) => Promise<{ key: string; }>",
+        "signature": "(key: string) => Promise<string>",
         "parameters": [
           {
-            "name": "options",
+            "name": "key",
             "docs": "",
-            "type": "{ key: string; }"
+            "type": "string"
           }
         ],
-        "returns": "Promise<{ key: string; }>",
+        "returns": "Promise<string>",
         "tags": [],
         "docs": "",
         "complexTypes": [],

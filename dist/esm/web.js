@@ -1,8 +1,8 @@
 import { WebPlugin } from '@capacitor/core';
 export class CapReadNativeSettingsWeb extends WebPlugin {
-    async read(options) {
-        console.log('Read', options);
-        return options;
+    async read(key) {
+        console.log("Not implemented for Web");
+        return key;
     }
 }
 //# sourceMappingURL=web.js.map

@@ -6,9 +6,9 @@ var capacitorCapReadNativeSettings = (function (exports, core) {
     });
 
     class CapReadNativeSettingsWeb extends core.WebPlugin {
-        async read(options) {
-            console.log('Read', options);
-            return options;
+        async read(key) {
+            console.log("Not implemented for Web");
+            return key;
         }
     }
 

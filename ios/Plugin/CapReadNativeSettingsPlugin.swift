@@ -12,8 +12,6 @@ public class CapReadNativeSettingsPlugin: CAPPlugin {
     @objc func read(_ call: CAPPluginCall) {
         let key = call.getString("key") ?? ""
         let value = Bundle.main.object(forInfoDictionaryKey: key) as? String
-        call.resolve([
-            "value": value as Any
-        ])
+        call.resolve(value as Any)
     }
 }
