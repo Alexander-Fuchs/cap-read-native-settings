@@ -13,7 +13,7 @@ public class CapReadNativeSettingsPlugin: CAPPlugin {
         let key = call.getString("key") ?? ""
         let value = Bundle.main.object(forInfoDictionaryKey: key) as? String
         call.resolve([
-            "value": value
+            "value": value as Any
         ])
     }
 }
