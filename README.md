@@ -23,12 +23,12 @@ npx cap sync
 ### read(...)
 
 ```typescript
-read(key: string) => Promise<{ value: string; }>
+read(options: { key: string; }) => Promise<{ value: string; }>
 ```
 
-| Param     | Type                |
-| --------- | ------------------- |
-| **`key`** | <code>string</code> |
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ key: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 

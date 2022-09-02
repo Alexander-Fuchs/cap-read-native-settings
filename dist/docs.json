@@ -7,12 +7,12 @@
     "methods": [
       {
         "name": "read",
-        "signature": "(key: string) => Promise<{ value: string; }>",
+        "signature": "(options: { key: string; }) => Promise<{ value: string; }>",
         "parameters": [
           {
-            "name": "key",
+            "name": "options",
             "docs": "",
-            "type": "string"
+            "type": "{ key: string; }"
           }
         ],
         "returns": "Promise<{ value: string; }>",

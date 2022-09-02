@@ -9,9 +9,9 @@ const CapReadNativeSettings = core.registerPlugin('CapReadNativeSettings', {
 });
 
 class CapReadNativeSettingsWeb extends core.WebPlugin {
-    async read(key) {
+    async read(options) {
         console.log("Not implemented for Web!");
-        return { value: key };
+        return { value: options.key };
     }
 }
 
