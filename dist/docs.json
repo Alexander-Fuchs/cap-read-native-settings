@@ -7,7 +7,7 @@
     "methods": [
       {
         "name": "read",
-        "signature": "(key: string) => Promise<string>",
+        "signature": "(key: string) => Promise<{ value: string; }>",
         "parameters": [
           {
             "name": "key",
@@ -15,7 +15,7 @@
             "type": "string"
           }
         ],
-        "returns": "Promise<string>",
+        "returns": "Promise<{ value: string; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],

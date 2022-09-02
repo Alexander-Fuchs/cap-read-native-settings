@@ -1,3 +1,3 @@
 export interface CapReadNativeSettingsPlugin {
-  read(key: string): Promise<string>;
+  read(key: string): Promise<{value: string}>;
 }
