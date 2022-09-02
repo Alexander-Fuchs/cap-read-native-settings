@@ -12,13 +12,15 @@ class CapReadNativeSettingsTests: XCTestCase {
         super.tearDown()
     }
 
-    func testEcho() {
+    func testRead() {
         // This is an example of a functional test case for a plugin.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
 
         let implementation = CapReadNativeSettings()
-        let value = "Hello, World!"
-        let result = implementation.echo(value)
+        let value = "Hello World"
+        let result = implementation.read("TestValue")
+        
+        print(result)
 
         XCTAssertEqual(value, result)
     }

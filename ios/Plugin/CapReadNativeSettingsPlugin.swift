@@ -9,10 +9,11 @@ import Capacitor
 public class CapReadNativeSettingsPlugin: CAPPlugin {
     private let implementation = CapReadNativeSettings()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func read(_ call: CAPPluginCall) {
+        let key = call.getString("key") ?? ""
+        let value = Bundle.main.object(forInfoDictionaryKey: key) as? String
         call.resolve([
-            "value": implementation.echo(value)
+            "value": value
         ])
     }
 }
