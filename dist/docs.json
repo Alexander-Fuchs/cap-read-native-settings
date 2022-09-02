@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "CapReadNativeSettingsPlugin",
+    "slug": "capreadnativesettingsplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "read",
+        "signature": "(options: { key: string; }) => Promise<{ key: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ key: string; }"
+          }
+        ],
+        "returns": "Promise<{ key: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "read"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

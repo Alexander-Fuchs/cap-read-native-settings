@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"","sourcesContent":["export interface CapReadNativeSettingsPlugin {\n  read(options: { key: string }): Promise<{ key: string }>;\n}\n"]}
