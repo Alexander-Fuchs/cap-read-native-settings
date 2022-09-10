@@ -1,6 +1,6 @@
 {
   "name": "cap-read-native-settings",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Read native settings from iOS and Android within your Ionic / Capacitor App.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

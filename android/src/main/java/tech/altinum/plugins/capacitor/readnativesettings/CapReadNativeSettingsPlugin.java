@@ -24,7 +24,7 @@ public class CapReadNativeSettingsPlugin extends Plugin {
         String value = activity.getString(resId);
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("value", implementation.read(value));
         call.resolve(ret);
     }
 }
